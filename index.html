@@ -19,7 +19,7 @@
         </p>
         <hr/>
         <p>
-            Please select a bus station and type a bus number.
+            Please select a bus station and type a bus number that you want to get alarm. <br> 
             Create an <a href="https://aws.amazon.com/free/">AWS Account</a>, attach the necessary <a
                 href="policy.json"> IAM policy</a>, and enter your Access Id and Secret Key below.
         </p>
@@ -32,12 +32,15 @@
                 <select id="station">
                     <option value=''>--- Select ---</option>
                     <option value="C-East"> Centerfield East </option>
-                    <option value="C-West"> Centerfield East </option>
+                    <option value="C-West"> Centerfield West </option>
                     <option value="y3"> Yeoksam Station </option>
                     <option value="sleung"> Seolleung Station </option>
                 </select>
                 <label> Bus Number : </label>
                 <input type="text" name="busnumber" />
+                <button id="start-button" class="button-xl">
+                    Start selected bus tracking
+                </button>                
             </div>
             <div class="col">
                 <label>Access ID:</label>
