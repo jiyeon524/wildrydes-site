@@ -38,8 +38,8 @@
                 </select>
                 <label> Bus Number : </label>
                 <input type="text" name="busnumber" />
-                <button id="start-button" class="button-xl">
-                    Start selected bus tracking
+                <button id="start-button" class="button-xl" onclick="button_clicked()">
+                    Start Tracking
                 </button>                
             </div>
             <div class="col">
@@ -114,6 +114,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="dist/main.js"></script>
+    
+    <p id="test"></p>
+    <script>
+        function button_clicked(){
+            document.getElementByld("test").innerHTML="Now you can get notifications via Slack";
+        }
+    </script>
 </body>
 
 </html>
