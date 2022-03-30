@@ -15,10 +15,11 @@
             SpringField Bus Information System
         </h1>
         <p class="small-caps">
-            hi1 Using the <a href="https://aws.amazon.com/transcribe/">Amazon Transcribe</a> WebSocket API
+            Powered by AWS services
         </p>
         <hr/>
         <p>
+            Please select a bus station and type a bus number.
             Create an <a href="https://aws.amazon.com/free/">AWS Account</a>, attach the necessary <a
                 href="policy.json"> IAM policy</a>, and enter your Access Id and Secret Key below.
         </p>
@@ -27,9 +28,20 @@
 
         <div class="row">
             <div class="col">
+                <label> Bus Station : </label>
+                <select id="station">
+                    <option value=''>--- Select ---</option>
+                    <option value="C-East"> Centerfield East </option>
+                    <option value="C-West"> Centerfield East </option>
+                    <option value="y3"> Yeoksam Station </option>
+                    <option value="sleung"> Seolleung Station </option>
+                </select>
+                <label> Bus Number : </label>
+                <input type="text" name="busnumber" />
+            </div>
+            <div class="col">
                 <label>Access ID:</label>
                 <input type="password" id="access_id" placeholder="ACCESS ID" value="" />
-
                 <label>Secret Key:</label>
                 <input type="password" id="secret_key" placeholder="SECRET KEY" value="" />
                 <label>Session Token (if using MFA):</label>
